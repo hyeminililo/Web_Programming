@@ -1,0 +1,20 @@
+<%@ page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!-- 머뭇거리시다가 설명하심  ㅡ,ㅁㅋㄴㅋㅁ -->
+<%
+ArrayList<String> lists = new ArrayList<String>();
+lists.add("리스트");
+lists.add("컬렉션");
+session.setAttribute("lists", lists);
+%>       
+
+<html>
+<head>
+	<title>session 영역</title>
+</head>
+<body>
+    <h3>페이지 이동 후 session 영역의 속성 읽기</h3>
+    <a href="SessionLocation.jsp">SessionLocation.jsp 바로가기</a>
+</body>
+</html>
